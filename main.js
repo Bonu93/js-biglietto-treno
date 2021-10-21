@@ -4,18 +4,16 @@ const age = parseFloat (prompt('Quanti anni hai?'));
 
 const price = (km * 0.21);
 
-const underDiscount = ((price / 100) * 20)
-
-const overDiscount = ((price / 100) * 40)
-
-let ticket
+let discount;
 
 if (age < 18) {
-    ticket = (price - underDiscount)
+    discount = ((price /100) * 20)
 } else if (age >= 65) {
-    ticket = (price - overDiscount)
-} else {
-    ticket = price
+    discount = ((price /100) * 40)
+} else  {
+    discount =0
 }
+
+let ticket = price - discount;
 
 document.getElementById('ticket').innerHTML = `Il tuo biglietto costa ${ticket.toFixed(2)}€`
