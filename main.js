@@ -1,6 +1,6 @@
-const km = parseInt (prompt('Quanti chilometri devi percorrere?'));
+const km = parseFloat (prompt('Quanti chilometri devi percorrere?'));
 
-const age = parseInt (prompt('Quanti anni hai?'));
+const age = parseFloat (prompt('Quanti anni hai?'));
 
 const price = (km * 0.21);
 
