@@ -11,7 +11,7 @@ if (age < 18) {
 } else if (age >= 65) {
     discount = ((price /100) * 40)
 } else  {
-    discount =0
+    discount = 0
 }
 
 let ticket = price - discount;
