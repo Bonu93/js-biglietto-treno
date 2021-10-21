@@ -18,6 +18,7 @@ let ticket = price - discount;
 
 if (isNaN(ticket)) {
     alert('Ricaricare la pagina, sono ammessi soltanto valori numerici')
+} else {
+    document.getElementById('ticket').innerHTML = `Il tuo biglietto costa ${ticket.toFixed(2)}€`
 }
 
-document.getElementById('ticket').innerHTML = `Il tuo biglietto costa ${ticket.toFixed(2)}€`
