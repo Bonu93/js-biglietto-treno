@@ -16,4 +16,8 @@ if (age < 18) {
 
 let ticket = price - discount;
 
+if (isNaN(ticket)) {
+    alert('Ricaricare la pagina, sono ammessi soltanto valori numerici')
+}
+
 document.getElementById('ticket').innerHTML = `Il tuo biglietto costa ${ticket.toFixed(2)}€`
